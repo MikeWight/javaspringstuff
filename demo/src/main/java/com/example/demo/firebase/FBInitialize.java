@@ -16,7 +16,7 @@ public class FBInitialize {
     public void initialize() {
         try {
             FileInputStream serviceAccount =
-                    new FileInputStream("./ffi.json");
+                    new FileInputStream("./src/main/java/com/example/demo/ffi.json");
 
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
